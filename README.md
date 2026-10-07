@@ -1,15 +1,4 @@
-基于deepseek V4.1 flash进行的对cotw（猎人荒野的召唤）物种雷达网站的文件爬取及其本地部署方案
-
-
-原网站:http://www.mathartbang.com/deca/hp/map.html
-
-
-包含地图素材与热力图及其整体代码框架，地图文件读取及其导出参考:
-
-
-https://github.com/kk49/deca
-
----
+分卷打包废案
 
 ## 下载（按地图分开打包）
 
@@ -73,4 +62,3 @@ python pack_maps.py --site site --out dist --mode maps --reserves r6
 - `maps` 任务：一个保护区一个任务（矩阵并发，默认 3 个一组），各自抓图、对账、打包、上传
 - 某个保护区的图没抓全 → 这一步直接失败、不发包，免得半残的地图被当成完整的发出去
 
-全量跑一趟要下十几 GB、耗时以小时计，所以没挂在 push 上；想只更新一两张图，触发时填 `r6 r10` 就行。
